@@ -1,5 +1,5 @@
 /*
-background purple: #540B51
+background purple: 540B51#
 background ivory: #F3EAE2
 button blue: #4285F4
 titles black: #191817
@@ -8,3 +8,222 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  body,
+  html {
+    background-color: #540b51;
+    margin: 0;
+    padding: 0;
+  }
+  .topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+  }
+
+  .slacklogo {
+    height: 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  .navicons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .navicons button {
+    background: none;
+    border: none;
+  }
+
+  .content h1 {
+    font-size: 50px;
+    text-align: center;
+
+    color: white;
+  }
+  .content p {
+    color: white;
+    font-size: 22px;
+  }
+  .content span {
+    color: #ecb12f;
+  }
+  .content,
+  .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    gap: 10px;
+  }
+  .content button {
+    height: 50px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .signup button:first-of-type {
+    background-color: white;
+  }
+  .googlebutton img {
+    height: 40px;
+    position: absolute;
+    left: 0;
+    background-color: white;
+  }
+  .googlebutton {
+    background-color: #2e71a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .hero {
+    overflow: hidden;
+  }
+  .hero img {
+    width: 150%;
+  }
+
+  main {
+    background: #f3eae2;
+  }
+  .company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .company p {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .company img {
+    height: 40px;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .mobile {
+    width: 97%;
+    margin-top: 50px;
+  }
+  .flexi {
+    display: flex;
+  }
+  .team {
+    margin-bottom: 20px;
+  }
+  .team h2 {
+    font-size: 35px;
+    margin-left: 10px;
+  }
+  .team p {
+    font-size: 20px;
+  }
+  .team a {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .meetslack {
+    background-color: white;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .meetslack h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .content button:first-of-type {
+    background-color: #540b51;
+    color: white;
+  }
+  .content button:last-of-type {
+    background-color: white;
+    color: #540b51;
+  }
+  .meetslack ul {
+    list-style-type: none;
+    text-align: center;
+    width: 40%;
+  }
+  .meetslack ul p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .meetslack ul span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #540b51;
+  }
+  .digital {
+    background-color: #540b51;
+    margin-bottom: 40px;
+  }
+  .digital h3 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+  }
+  .digital button {
+    border-color: white;
+  }
+  footer {
+    background-color: white;
+    padding: 20px;
+  }
+  footer img {
+    height: 50px;
+  }
+  .links {
+    display: flex;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+  }
+}
+.links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.links ul li {
+  margin-bottom: 20px;
+}
+.links ul li:first-of-type {
+  font-weight: bold;
+}
+.bottomlinks {
+  list-style-type: none;
+  font-weight: bold;
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+.bottomlinks li {
+  margin-bottom: 20px;
+}
+.bottomlinks li:last-of-type {
+  color: #2e71a6;
+}
+.social {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+footer small {
+  font-size: 16px;
+}
